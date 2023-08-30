@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+SA+Beginner:wght@500&family=Jomhuria&family=Rubik:wght@500&display=swap');
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.cards-container {
+  display: flex;
+  color: #333;
+  padding: 1rem;
+  overflow-x: auto;
+  position: relative;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  flex: 1 0 400px;
+  color: #fff;
+  box-shadow: 0 1px 1rem -4px #ffffff;
+  background: linear-gradient(69deg, #8686c1 0%, #2b378b 100%);
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 1rem -4px #000;
+    transform: translateY(-3px);
+  }
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-top: 1rem; 
+}
+
+.card-content {
+  padding: 1rem;
+  font-size: 40px;
+  font-family: 'Jomhuria', cursive;
+  text-align: center;
+}
+
+@media screen and (max-width: 625px) {
+  .card {
+    flex: 0 0 80%;
+    min-width: 80px;
+    color: #fff;
+    box-shadow: 0 1px 1rem -4px #ffffff;
+    background: linear-gradient(69deg, #8686c1 0%, #2b378b 100%);
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 150ms ease-in-out;
+  }
+}

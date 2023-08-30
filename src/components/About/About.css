@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Fasthand&family=Lato:wght@300&family=Lobster&family=Lumanosimo&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Overpass:wght@400;700&family=Poppins:wght@300&family=Rubik:wght@500&family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+h2 {
+    color: #fff;
+    font-family: 'Lumanosimo', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+.about-container-left > p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .about-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+  }
